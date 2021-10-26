@@ -42,6 +42,7 @@ class QuestionController extends AbstractController
         {
             return $markdownParser->transformMarkdown($questionText);
         });
+
         
 
         return $this->render('question/show.html.twig', [
